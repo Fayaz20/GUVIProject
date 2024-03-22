@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/updateProfileForm.js"></script>
+<body>
+    <form id="pro-form" action="/php/updateProfileForm.php" method="post">
+        <label for="age1">Age:</label>
+        <input type="text" id="age1" name="age" required><br><br>
+        
+        <label for="dob1">Date of Birth:</label>
+        <input type="text" id="dob1" name="dob" required><br><br>
+        
+        <label for="contact1">Contact:</label>
+        <input type="text" id="contact1" name="contact" required><br><br>
+        
+        <label for="address1">Address:</label>
+        <input type="text" id="address1" name="address" required><br><br>
+        
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        
+        $('#registerLink').click(function(e) {
+            e.preventDefault();
+            $('#content').load('register.html');
+        });
+
+        $('#loginLink').click(function(e) {
+            e.preventDefault();
+            $('#content').load('login.html');
+        });
+    });
+</script>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#" id="registerLink">Register</a></li>
+        <li><a href="#" id="loginLink">Login</a></li>
+    </ul>
+</nav>
+
+<h1 style="text-align: center;margin-top:100px;">Welcome to the Website</h1>
+<p style="text-align: center;">This is the home page of the website. You can register or login using the links above.</p>
+
+<div id="content"></div>
+
+</body>
+</html>

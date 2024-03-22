@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/modal.css"> 
+</head>
+
+<body>
+
+    <body>
+        <h2>Welcome to Your Profile</h2>
+        <div id="out">
+
+            <div id="user-info">
+                <div id="name"></div>
+                <div id="email"></div>
+                <div id="age"></div>
+                <div id="dob"></div>
+                <div id="contact"></div>
+                <div id="address"></div>
+            </div>
+
+        </div>
+        <button style="margin-left: 640px;" id="updateProfileBtn">Update Profile</button>
+        <button id="logoutBtn">Logout</button>
+
+
+        <div id="updateProfileModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="updateProfileFormContainer"></div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/modal.js"></script> 
+        <script src="js/logout.js"></script>
+        <script src="js/profile.js"></script>
+        <script>
+            document.getElementById("name").innerHTML = "Name: " + localStorage.getItem("username");
+            document.getElementById("email").innerHTML = "Email: " + localStorage.getItem("useremail");
+        </script>
+    </body>
+
+</html>
